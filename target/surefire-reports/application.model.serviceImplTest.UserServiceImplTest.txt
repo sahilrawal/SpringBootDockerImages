@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: application.model.serviceImplTest.UserServiceImplTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.732 s - in application.model.serviceImplTest.UserServiceImplTest
