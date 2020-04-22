@@ -34,4 +34,6 @@ public interface UserRepository extends CrudRepository<UserEntity,Long> {
     @Modifying
     @Query(value = "Update user set user_id = :newUserId where last_name=:lastName",nativeQuery = true)
     void updateUserIdByLastName_NamedParam(@Param("lastName") String lastName,@Param("newUserId") String newUserId);
+
+
 }
