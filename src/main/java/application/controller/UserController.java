@@ -53,7 +53,7 @@ public class UserController {
     //@PreAuthorize("permitAll()")
     @GetMapping(path = "/{email}/addresses",
             produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
-    public List<AddressDetailsResponse> getUserAddresses(@PathVariable String email {
+    public List<AddressDetailsResponse> getUserAddresses(@PathVariable String email) {
 
         //List<AddressDetailsResponse> addressResponseList = new ArrayList();
         List<AddressDTO> addressListDTO = addressService.getUserAddresses(email);
