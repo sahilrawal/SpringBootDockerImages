@@ -17,8 +17,8 @@ services:
     restart: always
     depends_on: # Start the depends_on first
       - mysql
-    deploy:
-      replicas:2
+    #deploy:
+     # replicas:2
     #environment:
      # RDS_HOSTNAME: mysql
      # RDS_PORT: 3306
