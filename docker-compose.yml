@@ -8,14 +8,17 @@ version: '3.7'
 services:
   todo-web-application:
     #image: myfirstspringbootwithmysqldockerimage/demo:dockerfile1
-    build:
-     context: D:/SPRING_FRAMEWORK/SpringProjectUdemy
-     dockerfile: Dockerfile
+    image: sahilrawal/myfirstspringbootdockerimage:latest
+     #build:
+     #context: D:/SPRING_FRAMEWORK/SpringProjectUdemy
+     #dockerfile: Dockerfile
     ports:
       - "8080:8080"
     restart: always
     depends_on: # Start the depends_on first
       - mysql
+    deploy:
+      replicas:2
     #environment:
      # RDS_HOSTNAME: mysql
      # RDS_PORT: 3306
