@@ -120,7 +120,7 @@ public class UserController {
             produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE}
 
     )
-    public UserDetailsResponseBody createUser(@RequestBody UserDetailsRequestBody userDetails {
+    public UserDetailsResponseBody createUser(@RequestBody UserDetailsRequestBody userDetails) {
 
         //UserModelDto requestDto = new UserModelDto();
         // BeanUtils.copyProperties(userDetails, requestDto);
