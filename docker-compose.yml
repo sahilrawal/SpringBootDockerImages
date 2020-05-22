@@ -9,9 +9,9 @@ services:
   todo-web-application:
     #image: myfirstspringbootwithmysqldockerimage/demo:dockerfile1
     #image: sahilrawal/myfirstspringbootdockerimage:latest
-     build:
-     context: D:/SPRING_FRAMEWORK/SpringProjectUdemy
-     dockerfile: Dockerfile
+    build:
+      context: D:/SPRING_FRAMEWORK/SpringProjectUdemy
+      dockerfile: Dockerfile
     ports:
       - "8080:8080"
     restart: always
